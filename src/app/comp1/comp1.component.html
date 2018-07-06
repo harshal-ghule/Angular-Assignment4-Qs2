@@ -1,0 +1,17 @@
+
+<button (click) = "getData()"> Click to get information </button>
+
+<div *ngIf = "IsSet; then ifblock">
+</div>
+
+<ng-template #ifblock>
+
+    <ul *ngFor="let value of info">
+        <li>
+          {{value.Name}}
+          {{value.Age}}
+          {{value.Collage}}
+        </li>
+      </ul>      
+
+</ng-template> 
